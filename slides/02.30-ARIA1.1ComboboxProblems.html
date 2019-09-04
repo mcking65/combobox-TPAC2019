@@ -1,0 +1,46 @@
+---
+content_type: text/html
+title: Problems with ARIA 1.1 Combobox Structure
+hide_toc: true
+---
+
+<table style="font-size: .8em;">
+<tr>
+  <td>
+    <h2>ARIA 1.1</h2>
+    <div style="border: thick solid green;" role="group" aria-label="green combobox rectangle">
+      <p>div with role combobox</p>
+      <div style="border: thin solid blue;" role="group" aria-label="blue textbox rectangle">
+        <p>text input with role textbox</p>
+      </div>
+      <div style="border: thin solid red;" role="group" aria-label="red listbox rectangle">
+        <p>
+          popup listbox<br>
+          controlled by text input
+        </p>
+      </div>
+    </div>
+    <div role="group" aria-label="HTML">
+      <code>
+      &lt;div role="combobox"><br>
+        &nbsp;&lt;input type="text"<br>
+        &nbsp;aria-controls="lb"><br>
+&nbsp;        &lt;ul role="listbox"<br>
+        &nbsp;id="lb">...<br>
+&nbsp;        &lt;/ul><br>
+        &lt;/div>
+      </code>
+    </div>
+  </td>
+
+  <td>
+    <ul>
+      <li>Historically, screen readers have expected combobox to be focusable input.</li>
+      <li>1.1 pattern changed combobox into a composite container.</li>
+      <li>Except in interaction mode, no screen reader supports this pattern.</li>
+      <li>Also has unresolved naming issues.</li>
+    </ul>
+  </td>
+
+</tr>
+</table>
