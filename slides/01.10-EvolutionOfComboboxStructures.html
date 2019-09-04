@@ -1,0 +1,35 @@
+---
+content_type: text/html
+title: Evolution of the Combobox Structure
+hide_toc: true
+---
+
+<table>
+<tr>
+  <td>
+    <h2>ARIA 1.0</h2>
+    <div style="border: thick solid green;" role="group" aria-label="green combobox rectangle">
+      <p>text input with role combobox</p>
+      <div style="border: thin solid red;" role="group" aria-label="red listbox rectangle">
+        <p>popup listbox</p>
+        <p>owned by text input</p>
+      </div>
+    </div>
+  </td>
+
+  <td>
+    <h2>ARIA 1.1</h2>
+    <div style="border: thick solid green;" role="group" aria-label="green combobox rectangle">
+      <p>div with role combobox</p>
+      <div style="border: thin solid blue;" role="group" aria-label="blue textbox rectangle">
+        <p>text input with role textbox</p>
+      </div>
+      <div style="border: thin solid red;" role="group" aria-label="red listbox rectangle">
+        <p>popup listbox</p>
+        <p>controlled by text input</p>
+      </div>
+    </div>
+  </td>
+
+</tr>
+</table>
