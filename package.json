@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "codemirror": "^5.7.0",
+    "codemirror": "^5.58.2",
     "exerslide": "~1.1.2",
     "exerslide-plugin-bulletlist-layout": "^1.1.0",
     "exerslide-plugin-center-layout": "^1.1.0",
